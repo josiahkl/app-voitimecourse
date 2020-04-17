@@ -1,0 +1,121 @@
+
+type = string-attribute
+name = HISTORY_NOTE
+count = 4190
+'[span@psy-kk-md1.stanford.edu: Thu Sep  5 14:23:05 2013] ===================================\n[span@psy-kk-md1.stanford.edu: Thu Sep  5 14:23:05 2013] === History of inputs to 3dcalc ===\n[span@psy-kk-md1.stanford.edu: Thu Sep  5 14:23:05 2013] === Input a:\n[span@psy-kk-md1.stanford.edu: Thu Sep  5 14:23:05 2013] [dglen@gollum.local: Wed Aug  1 13:46:01 2007] 3dcopy /Users/dglen/spm5/toolbox/Anatomy/colin27T1_seg.hdr ./MNIa_N27+tlrc\n[dglen@gollum.local: Wed Aug  1 13:46:01 2007] 3drefit -sublabel 0 colin27T1_seg MNIa_N27+tlrc\n[dglen@gollum.local: Wed Aug  1 13:46:02 2007] 3dcopy ./MNIa_N27+tlrc MNI_N27\n[dglen@gollum.local: Wed Aug  1 13:46:02 2007] 3drefit -dxorigin 0.000000 -dyorigin -4.000000 -dzorigin -5.000000 MNI_N27+tlrc\n[dglen@gollum.local: Wed Aug  1 13:46:02 2007] @Shift_Volume -MNI_Anat_to_MNI -dset MNIa_N27+tlrc -prefix MNI_N27\n[dglen@gollum.local: Wed Aug  1 13:46:03 2007] adwarp.c -resam Cu -force -apar /Users/dglen/afni/src/ZILLES_N27_ATLASES/N27/TT_N27+tlrc.HEAD -dpar MNI_N27+tlrc -prefix TT_N27\n[dglen@ndsl-lfmi-kocha.nih.gov: Thu Sep  9 14:00:34 2010] 3drefit -space TLRC /Users/dglen/abin/TT_EPI+tlrc.HEAD /Users/dglen/abin/TT_N27+tlrc.HEAD /Users/dglen/abin/TT_N27_CA_EZ_MPM+tlrc.HEAD /Users/dglen/abin/TT_N27_CA_EZ_PMaps+tlrc.HEAD /Users/dglen/abin/TT_N27_EZ_LR+tlrc.HEAD /Users/dglen/abin/TT_N27_EZ_ML+tlrc.HEAD /Users/dglen/abin/TT_avg152T1+tlrc.HEAD /Users/dglen/abin/TT_avg152T2+tlrc.HEAD /Users/dglen/abin/TT_icbm452+tlrc.HEAD /Users/dglen/abin/TTatlas+tlrc.HEAD\n[span@psy-kk-md1.stanford.edu: Wed Sep  4 13:54:14 2013] Drawing plugin COPY: Fill->Zero Type->Func\n[span@psy-kk-md1.stanford.edu: Wed Sep  4 13:56:13 2013] Drawing plugin COPY: Fill->Data\n[span@psy-kk-md1.stanford.edu: Thu Sep  5 14:22:56 2013] 3dresample -master nacc8mm+tlrc. -inset dorins+tlrc. -prefix dorins_resamp\n[span@psy-kk-md1.stanford.edu: Thu Sep  5 14:23:05 2013] === Input b:\n[span@psy-kk-md1.stanford.edu: Thu Sep  5 14:23:05 2013] [knutson@elli: Fri Apr 13 01:55:03 2001] to3d -spgr -prefix cor124 -xFOV 120R-120L -yFOV 120S-120I -zSLAB 94.2P-151.8A '3Ds:0:0:256:256:124:*124.img'\n[knutson@elli: Fri Apr 13 01:58:14 2001] afni: transformed to AC-PC Aligned\n[knutson@elli: Fri Apr 13 02:00:27 2001] afni: transformed to Talairach View\n[root@neutral.Stanford.EDU: Tue Jan 22 19:40:29 2002] AFNI: resampled and rewritten\n[root@neutral.Stanford.EDU: Tue Jan 22 19:44:39 2002] AFNI: resampled and rewritten\n[root@neutral.Stanford.EDU: Tue Jan 22 19:45:31 2002] Dataset Copy {Input: Dataset=normal/merge/cor124+tlrc.HEAD} {Output: Prefix=naccmpfcmask} {Data Fill: Method=Zero [All]} {Dataset: Type=fim}\n[root@neutral.Stanford.EDU: Sun Jul 14 20:41:12 2002] Dataset Copy {Input: Dataset=norm/scripts/allmask+tlrc.HEAD} {Output: Prefix=naccmpfcvta} {Data Fill: Method=Data [All]} {Dataset: Type=fim}\n[span@mpfc.stanford.edu: Thu Aug 19 12:18:20 2004] Drawing plugin COPY: Fill->Data\n[span@mpfc.stanford.edu: Thu Jul 21 18:25:13 2005] Drawing plugin COPY: Fill->Zero Type->Func\n[span@mpfc.stanford.edu: Thu Jul 21 18:29:02 2005] Drawing plugin COPY: Fill->Data\n[span@dmthal.stanford.edu: Mon Sep 12 23:20:48 2005] Drawing plugin COPY: Fill->Zero Type->Func\n[span@dmthal.stanford.edu: Mon Sep 12 23:25:27 2005] Drawing plugin COPY: Fill->Data\n[span@dmthal.stanford.edu: Thu Oct 13 17:46:04 2005] Drawing plugin COPY: Fill->Zero Type->Func\n[span@dmthal.stanford.edu: Thu Oct 13 17:51:42 2005] Drawing plugin COPY: Fill->Data\n[span@mpfc.stanford.edu: Tue Feb 28 13:40:15 2006] Drawing plugin COPY: Fill->Zero Type->Func\n[span@mpfc.stanford.edu: Tue Feb 28 13:46:42 2006] Drawing plugin COPY: Fill->Data\n[span@mpfc.stanford.edu: Tue Mar  7 16:35:45 2006] Drawing plugin COPY: Fill->Zero Type->Func\n[span@mpfc.stanford.edu: Tue Mar  7 16:45:52 2006] Drawing plugin COPY: Fill->Data\n[span@mpfc.stanford.edu: Tue Mar  7 16:48:07 2006] 3dresample -dxyz 2.0 2.0 2.0 -prefix nacc8mm -infix nacc8mmunsamp+tlrc\n[span@psy-kk-md1.stanford.edu: Thu Sep  5 14:23:05 2013] ===================================\n[span@psy-kk-md1.stanford.edu: Thu Sep  5 14:23:05 2013] 3dcalc -prefix binary_nacc_dorins -a dorins_resamp+tlrc. -b nacc8mm+tlrc. -expr 'step(a)+step(b)'~
+
+type = string-attribute
+name = TYPESTRING
+count = 15
+'3DIM_HEAD_FUNC~
+
+type = string-attribute
+name = IDCODE_STRING
+count = 27
+'XYZ_TxReZYA9eJbpwvvP6N81Yw~
+
+type = string-attribute
+name = IDCODE_DATE
+count = 25
+'Thu Sep  5 14:23:05 2013~
+
+type = integer-attribute
+name = SCENE_DATA
+count = 8
+ 2 0 1 -999 -999
+ -999 -999 -999
+
+type = string-attribute
+name = LABEL_1
+count = 5
+'zyxt~
+
+type = string-attribute
+name = LABEL_2
+count = 5
+'zyxt~
+
+type = string-attribute
+name = DATASET_NAME
+count = 5
+'zyxt~
+
+type = integer-attribute
+name = ORIENT_SPECIFIC
+count = 3
+ 0 3 4
+
+type  = float-attribute
+name  = ORIGIN
+count = 3
+            -79            -79            -64
+
+type  = float-attribute
+name  = DELTA
+count = 3
+              2              2              2
+
+type  = float-attribute
+name  = IJK_TO_DICOM
+count = 12
+              2              0              0            -79              0
+              2              0            -79              0              0
+              2            -64
+
+type  = float-attribute
+name  = IJK_TO_DICOM_REAL
+count = 12
+              2              0              0            -79              0
+              2              0            -79              0              0
+              2            -64
+
+type  = float-attribute
+name  = BRICK_STATS
+count = 2
+              0              1
+
+type = integer-attribute
+name = DATASET_RANK
+count = 8
+ 3 1 0 0 0
+ 0 0 0
+
+type = integer-attribute
+name = DATASET_DIMENSIONS
+count = 5
+ 80 95 75 0 0
+
+type = integer-attribute
+name = BRICK_TYPES
+count = 1
+ 0
+
+type  = float-attribute
+name  = BRICK_FLOAT_FACS
+count = 1
+              0
+
+type = string-attribute
+name = BRICK_LABS
+count = 14
+'colin27T1_seg~
+
+type = string-attribute
+name = BRICK_KEYWORDS
+count = 1
+'~
+
+type = string-attribute
+name = TEMPLATE_SPACE
+count = 5
+'TLRC~
+
+type = integer-attribute
+name = INT_CMAP
+count = 1
+ 0
+
+type = string-attribute
+name = BYTEORDER_STRING
+count = 10
+'LSB_FIRST~

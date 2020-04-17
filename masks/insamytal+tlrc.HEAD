@@ -1,0 +1,111 @@
+
+type = string-attribute
+name = HISTORY_NOTE
+count = 2805
+'[knutson@elli: Fri Apr 13 01:55:03 2001] to3d -spgr -prefix cor124 -xFOV 120R-120L -yFOV 120S-120I -zSLAB 94.2P-151.8A '3Ds:0:0:256:256:124:*124.img'\n[knutson@elli: Fri Apr 13 01:58:14 2001] afni: transformed to AC-PC Aligned\n[knutson@elli: Fri Apr 13 02:00:27 2001] afni: transformed to Talairach View\n[root@neutral.Stanford.EDU: Tue Jan 22 19:40:29 2002] AFNI: resampled and rewritten\n[root@neutral.Stanford.EDU: Tue Jan 22 19:44:39 2002] AFNI: resampled and rewritten\n[root@neutral.Stanford.EDU: Tue Jan 22 19:45:31 2002] Dataset Copy {Input: Dataset=normal/merge/cor124+tlrc.HEAD} {Output: Prefix=naccmpfcmask} {Data Fill: Method=Zero [All]} {Dataset: Type=fim}\n[root@neutral.Stanford.EDU: Sun Jul 14 20:41:12 2002] Dataset Copy {Input: Dataset=norm/scripts/allmask+tlrc.HEAD} {Output: Prefix=naccmpfcvta} {Data Fill: Method=Data [All]} {Dataset: Type=fim}\n[span@mpfc.stanford.edu: Thu Aug 19 12:18:20 2004] Drawing plugin COPY: Fill->Data\n[span@mpfc.stanford.edu: Thu Jul 21 18:25:13 2005] Drawing plugin COPY: Fill->Zero Type->Func\n[span@mpfc.stanford.edu: Thu Jul 21 18:29:02 2005] Drawing plugin COPY: Fill->Data\n[span@dmthal.stanford.edu: Mon Sep 12 23:20:48 2005] Drawing plugin COPY: Fill->Zero Type->Func\n[span@dmthal.stanford.edu: Mon Sep 12 23:25:27 2005] Drawing plugin COPY: Fill->Data\n[span@dmthal.stanford.edu: Thu Oct 13 17:46:04 2005] Drawing plugin COPY: Fill->Zero Type->Func\n[span@dmthal.stanford.edu: Thu Oct 13 17:51:42 2005] Drawing plugin COPY: Fill->Data\n[span@dmthal.stanford.edu: Tue Nov 14 11:20:50 2006] Drawing plugin COPY: Fill->Zero Type->Func\n[span@dmthal.stanford.edu: Tue Nov 14 11:26:23 2006] Drawing plugin COPY: Fill->Data\n[span@dmthal.stanford.edu: Wed Feb 28 16:11:25 2007] Drawing plugin COPY: Fill->Zero Type->Func\n[span@dmthal.stanford.edu: Wed Feb 28 16:12:17 2007] Drawing plugin COPY: Fill->Data\n[span@dmthal.stanford.edu: Thu Apr 12 14:41:52 2007] Drawing plugin COPY: Fill->Zero Type->Func\n[span@dmthal.stanford.edu: Wed May  2 15:06:15 2007] Drawing plugin COPY: Fill->Zero Type->Func\n[span@dmthal.stanford.edu: Wed May  2 15:08:46 2007] Drawing plugin COPY: Fill->Data\n[span@dmthal.stanford.edu: Fri Jul 27 10:16:50 2007] Drawing plugin COPY: Fill->Zero Type->Func\n[span@dmthal.stanford.edu: Mon Sep 10 16:58:04 2007] Drawing plugin COPY: Fill->Zero Type->Func\n[span@dmthal.stanford.edu: Mon Sep 10 17:03:11 2007] Drawing plugin COPY: Fill->Data\n[span@dmthal.stanford.edu: Tue Dec 11 13:01:23 2007] Drawing plugin COPY: Fill->Zero Type->Func\n[span@dmthal.stanford.edu: Tue Dec 11 13:09:46 2007] 3dresample -dxyz 2.0 2.0 2.0 -prefix afni_ins -insert afni_ins_unsamp+tlrc\n[span@dmthal: Mon Nov  9 12:23:45 2009] Drawing plugin COPY: Fill->Data Type->Func\n[span@dmthal: Mon Nov  9 12:24:21 2009] Drawing plugin COPY: Fill->Data~
+
+type = string-attribute
+name = TYPESTRING
+count = 15
+'3DIM_HEAD_FUNC~
+
+type = string-attribute
+name = IDCODE_STRING
+count = 27
+'XYZ_W4sjHSYcYH65qpCiRekynQ~
+
+type = string-attribute
+name = IDCODE_DATE
+count = 25
+'Mon Nov  9 12:24:21 2009~
+
+type = integer-attribute
+name = SCENE_DATA
+count = 8
+ 2 0 1 -999 -999
+ -999 -999 -999
+
+type = string-attribute
+name = LABEL_1
+count = 15
+'CCOPY_afni_ins~
+
+type = string-attribute
+name = LABEL_2
+count = 5
+'zyxt~
+
+type = string-attribute
+name = DATASET_NAME
+count = 5
+'zyxt~
+
+type = integer-attribute
+name = ORIENT_SPECIFIC
+count = 3
+ 0 3 4
+
+type  = float-attribute
+name  = ORIGIN
+count = 3
+            -79            -79            -64
+
+type  = float-attribute
+name  = DELTA
+count = 3
+              2              2              2
+
+type  = float-attribute
+name  = IJK_TO_DICOM
+count = 12
+              2              0              0            -79              0
+              2              0            -79              0              0
+              2            -64
+
+type  = float-attribute
+name  = IJK_TO_DICOM_REAL
+count = 12
+              2              0              0            -79              0
+              2              0            -79              0              0
+              2            -64
+
+type  = float-attribute
+name  = BRICK_STATS
+count = 2
+              0              4
+
+type = integer-attribute
+name = DATASET_RANK
+count = 8
+ 3 1 0 0 0
+ 0 0 0
+
+type = integer-attribute
+name = DATASET_DIMENSIONS
+count = 5
+ 80 95 75 0 0
+
+type = integer-attribute
+name = BRICK_TYPES
+count = 1
+ 1
+
+type  = float-attribute
+name  = BRICK_FLOAT_FACS
+count = 1
+              0
+
+type = string-attribute
+name = BRICK_LABS
+count = 3
+'#0~
+
+type = string-attribute
+name = BRICK_KEYWORDS
+count = 1
+'~
+
+type = string-attribute
+name = BYTEORDER_STRING
+count = 10
+'LSB_FIRST~
